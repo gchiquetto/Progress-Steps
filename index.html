@@ -13,7 +13,7 @@
 <body>
     <main class="main">
         <div class="progress__container">
-            <div class="progress__container-steps">1</div>
+            <div class="progress__container-steps progress__container-steps--active">1</div>
             <div class="progress__container-bar progress__container-bar--1"></div>
             <div class="progress__container-steps">2</div>
             <div class="progress__container-bar progress__container-bar--2"></div>
@@ -22,8 +22,8 @@
             <div class="progress__container-steps">4</div>
         </div>
         <div class="progress__buttons">
-            <button class="progress__buttons-btn progress__buttons-inactive">Prev</button>
-            <button class="progress__buttons-btn progress__buttons-active">Next</button>
+            <button id="btn-prev" class="progress__buttons-btn">Prev</button>
+            <button id="btn-next" class="progress__buttons-btn">Next</button>
         </div>
     </main>
 
