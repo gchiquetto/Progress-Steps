@@ -1,0 +1,66 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color:#4a4d4f;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15rem;
+    height: 100vh;
+
+
+}
+
+.progress__container{
+   display: grid;
+   grid-gap: 3rem;
+   grid-template-columns: repeat(4, 1fr);
+   padding: 3rem;
+   margin-bottom: 1rem;
+   
+    &-steps{
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: .3rem solid #E3E6E8;
+    }
+    
+}
+
+.progress__buttons{
+    color: #fff;
+    
+
+    &-btn{
+        background-color: #9c9fa1bc;
+        border: none;
+        border-radius: .3rem;
+        padding: .5rem 2rem;
+        color: inherit;
+        cursor: pointer;
+
+        &:not(:last-child){
+            margin-right: 1rem;
+        } 
+    }
+    &-active{
+        background-color: rgb(41, 90, 187);
+    }
+}
