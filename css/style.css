@@ -22,8 +22,10 @@ html {
 
 .progress__container {
   display: grid;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-template-columns: min-content 1fr min-content 1fr min-content 1fr min-content;
+  justify-items: center;
+  grid-gap: 0;
   padding: 3rem;
   margin-bottom: 1rem; }
   .progress__container-steps {
@@ -34,6 +36,14 @@ html {
     justify-content: center;
     border-radius: 50px;
     border: .3rem solid #E3E6E8; }
+    .progress__container-steps--active {
+      background-color: #295abb; }
+  .progress__container-bar {
+    background-color: #E3E6E8;
+    height: .5rem;
+    width: 10rem; }
+    .progress__container-bar--active {
+      background-color: #295abb; }
 
 .progress__buttons {
   color: #fff; }

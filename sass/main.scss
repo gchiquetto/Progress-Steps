@@ -26,9 +26,11 @@ html{
 }
 
 .progress__container{
-   display: grid;
-   grid-gap: 3rem;
-   grid-template-columns: repeat(4, 1fr);
+   display: grid;   
+   align-items: center;   
+   grid-template-columns: min-content 1fr min-content 1fr min-content 1fr min-content; 
+   justify-items: center;
+   grid-gap: 0;
    padding: 3rem;
    margin-bottom: 1rem;
    
@@ -40,6 +42,21 @@ html{
         justify-content: center;
         border-radius: 50px;
         border: .3rem solid #E3E6E8;
+
+        &--active{
+            background-color: rgb(41, 90, 187);
+        }
+        
+    }
+
+    &-bar{
+        background-color: #E3E6E8;
+        height: .5rem;
+        width: 10rem;
+
+        &--active{
+            background-color: rgb(41, 90, 187);
+        }
     }
     
 }
